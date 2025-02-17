@@ -1,0 +1,8 @@
+Back from Welcome! page  Unable to Click with error: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.12'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [f415fbba-c129-4ef6-a81c-55f63019a0c5, findElement {using=xpath, value=//XCUIElementTypeButton[@name='Back']}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001C75D63ED9401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11359, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f415fbba-c129-4ef6-a81c-55f63019a0c5

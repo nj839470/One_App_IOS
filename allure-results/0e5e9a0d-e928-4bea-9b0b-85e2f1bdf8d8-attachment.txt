@@ -1,0 +1,7 @@
+Alert message =  is not readable with error: Error occurred for request - /wd/hub/session/95c7c038-1248-466b-aa56-c3069435c433/element, error - dial tcp 10.151.0.133:5295: connect: connection refused
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '22.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [95c7c038-1248-466b-aa56-c3069435c433, findElement {using=xpath, value=//XCUIElementTypeStaticText[contains(@name,'The app will alert with')]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18.0, appium:takesScreenshot: true, appium:udid: 00008140-000954542E13001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11174, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 95c7c038-1248-466b-aa56-c3069435c433

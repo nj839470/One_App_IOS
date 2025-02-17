@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Home_Page_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Home_Page_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 09 10:33:58 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1550 seconds (1550951 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC025_verify_Vehicle_valution()'><b>TC025_verify_Vehicle_valution</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>93</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC037_View_dealer_name_and_address()'><b>TC037_View_dealer_name_and_address</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>59</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC035_Verify_Dealer_Locator()'><b>TC035_Verify_Dealer_Locator</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>9</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC036_Select_city()'><b>TC036_Select_city</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>27</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC042_Accessories_in_PAM()'><b>TC042_Accessories_in_PAM</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>86</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC041_Merchandise_in_PAM()'><b>TC041_Merchandise_in_PAM</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>81</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC029_Verify_Challans_Documents()'><b>TC029_Verify_Challans_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>13</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC039_Helmets_in_PAM()'><b>TC039_Helmets_in_PAM</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>133</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC024_verify_Vehicle_condition()'><b>TC024_verify_Vehicle_condition</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>66</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC043_View_All_Accessories_in_PAM()'><b>TC043_View_All_Accessories_in_PAM</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>60</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC027_Verify_Insurance_Documents()'><b>TC027_Verify_Insurance_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>52</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC028_Verify_PUC_Documents()'><b>TC028_Verify_PUC_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>38</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC022_verify_Exchange()'><b>TC022_verify_Exchange</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>41</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC031_Verify_RSA()'><b>TC031_Verify_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>171</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC045_verify_Benifits_Vehicle_Exchange()'><b>TC045_verify_Benifits_Vehicle_Exchange</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>17</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC044_verify_Check_Out_at_home_page()'><b>TC044_verify_Check_Out_at_home_page</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>16</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC021_verify_Navigate()'><b>TC021_verify_Navigate</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>38</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC038_verify_Service_at_home_page()'><b>TC038_verify_Service_at_home_page</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>29</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC026_Verify_RC_Documents()'><b>TC026_Verify_RC_Documents</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>73</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC023_verify_Vehicle_details()'><b>TC023_verify_Vehicle_details</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>26</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC033_frequently_asked_questions()'><b>TC033_frequently_asked_questions</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>36</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC040_Lubricant_in_PAM()'><b>TC040_Lubricant_in_PAM</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>88</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC019_Home_page_verify()'><b>TC019_Home_page_verify</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>107</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC030_Verify_Relationship_Manager()'><b>TC030_Verify_Relationship_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>22</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC032_Renew_RSA()'><b>TC032_Renew_RSA</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>27</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC034_Verify_Technical_Support_Manager()'><b>TC034_Verify_Technical_Support_Manager</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>12</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+<tr>
+<td title='Page_Test.Home_Page_Test.TC020_verify_SOS()'><b>TC020_verify_SOS</b><br>Test class: Page_Test.Home_Page_Test</td>
+<td></td>
+<td>112</td>
+<td>Page_Test.Home_Page_Test@69c79f09</td></tr>
+</table><p>
+</body>
+</html>

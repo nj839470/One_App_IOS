@@ -1,0 +1,659 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 18 15:14:07 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>2202 seconds (2202748 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC070_verify_Dealer_information()'><b>TC070_verify_Dealer_information</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, goBack {}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
+	at com.page_object.Services_Page.dealer_info(Services_Page.java:88)
+	at Page_Test.Services_Page_Test.TC070_verify_Dealer_information(Services_Page_Test.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 25 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 34 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace906515144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906515144'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, goBack {}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:973)
+	at com.page_object.Services_Page.dealer_info(Services_Page.java:88)
+	at Page_Test.Services_Page_Test.TC070_verify_Dealer_information(Services_Page_Test.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 25 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 34 more
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list()'><b>TC094_Verify_all_DIY_Videos_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/lbl&apos;)]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.size(Unknown Source)
+	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:412)
+	at Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list(Services_Page_Test.java:370)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 29 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 38 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace229307250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace229307250'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id,&apos;com.customerapp.hero:id/lbl&apos;)]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.size(Unknown Source)
+	at com.page_object.Services_Page.DIY_Videos_list(Services_Page.java:412)
+	at Page_Test.Services_Page_Test.TC094_Verify_all_DIY_Videos_list(Services_Page_Test.java:370)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 29 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC093_Verify_all_tips_list()'><b>TC093_Verify_all_tips_list</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id, &apos;com.customerapp.hero:id&apos;)]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.size(Unknown Source)
+	at com.page_object.Services_Page.tips_list(Services_Page.java:386)
+	at Page_Test.Services_Page_Test.TC093_Verify_all_tips_list(Services_Page_Test.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 29 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 38 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1405681829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1405681829'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [86624a88-9a1f-4ae5-abc0-85d4ec129b0a, findElements {using=xpath, value=//android.widget.TextView[contains(@resource-id, &apos;com.customerapp.hero:id&apos;)]}]
+Capabilities {appium:app: /opt/raid-data/data/userV2/..., appium:appActivity: com.customerapp.hero.views...., appium:appPackage: com.customerapp.hero, appium:appiumVersion: 2.0.0, appium:automationName: uiautomator2, appium:chromedriverPort: 30722, appium:databaseEnabled: false, appium:desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, appiumVersion: 2.0.0, automationName: uiautomator2, chromedriverPort: 30722, deviceName: 617, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, pCloudy_DeviceManufacturer: Google, pCloudy_DeviceVersion: 11.0.0, pCloudy_DurationInMinutes: 90, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: true, pCloudy_Username: randhir.kumar@heromotocorp.com, pCloudy_WildNet: false, platformName: android, platformVersion: 11.0.0, systemPort: 30724, udid: 803KPRW1598286}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2 XL, appium:deviceName: 803KPRW1598286, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2880, appium:deviceUDID: 803KPRW1598286, appium:javascriptEnabled: true, appium:launchTimeout: 90000, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:pCloudy_ApiKey: 2gdc5pv55mh54mqtwmvj4xbr, appium:pCloudy_DeviceManufacturer: Google, appium:pCloudy_DeviceVersion: 11.0.0, appium:pCloudy_DurationInMinutes: 90, appium:pCloudy_EnableDeviceLogs: true, appium:pCloudy_EnablePerformanceData: false, appium:pCloudy_EnableVideo: true, appium:pCloudy_Username: randhir.kumar@heromotocorp.com, appium:pCloudy_WildNet: false, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 98, appium:systemPort: 30724, appium:takesScreenshot: true, appium:udid: 803KPRW1598286, appium:viewportRect: {height: 2614, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 86624a88-9a1f-4ae5-abc0-85d4ec129b0a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.size(Unknown Source)
+	at com.page_object.Services_Page.tips_list(Services_Page.java:386)
+	at Page_Test.Services_Page_Test.TC093_Verify_all_tips_list(Services_Page_Test.java:364)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.UncheckedIOException: java.net.UnknownHostException: device.pcloudy.com
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 29 more
+Caused by: java.net.UnknownHostException: device.pcloudy.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:952)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1658)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1524)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:169)
+	at io.netty.util.internal.SocketUtils$9.run(SocketUtils.java:166)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.allAddressesByName(SocketUtils.java:166)
+	at io.netty.resolver.DefaultNameResolver.doResolveAll(DefaultNameResolver.java:50)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:79)
+	at io.netty.resolver.SimpleNameResolver.resolveAll(SimpleNameResolver.java:71)
+	at org.asynchttpclient.resolver.RequestHostnameResolver.resolve(RequestHostnameResolver.java:50)
+	at org.asynchttpclient.netty.request.NettyRequestSender.resolveAddresses(NettyRequestSender.java:364)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:307)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:143)
+	at org.asynchttpclient.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:114)
+	at org.asynchttpclient.DefaultAsyncHttpClient.execute(DefaultAsyncHttpClient.java:259)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:228)
+	at org.asynchttpclient.DefaultAsyncHttpClient.executeRequest(DefaultAsyncHttpClient.java:249)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC081_View_Service_schedule_27500()'><b>TC081_View_Service_schedule_27500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC036_Verify_emergency_contacts()'><b>TC036_Verify_emergency_contacts</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC078_View_Service_schedule_18500()'><b>TC078_View_Service_schedule_18500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC068_Vehicle_details_on_service_page()'><b>TC068_Vehicle_details_on_service_page</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>42</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC035_Manage_License()'><b>TC035_Manage_License</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC090_View_Service_schedule_860_days()'><b>TC090_View_Service_schedule_860_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC031_verify_more_detais_button()'><b>TC031_verify_more_detais_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>5</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC077_View_Service_schedule_15500()'><b>TC077_View_Service_schedule_15500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC083_View_Service_schedule_160_days()'><b>TC083_View_Service_schedule_160_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC041_Verify_my_Vehicle_service_History()'><b>TC041_Verify_my_Vehicle_service_History</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC084_View_Service_schedule_260_days()'><b>TC084_View_Service_schedule_260_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC071_Verify_dealer_manager_info()'><b>TC071_Verify_dealer_manager_info</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC085_View_Service_schedule_360_days()'><b>TC085_View_Service_schedule_360_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC042_Verify_Tips_and_DIY_videos_inside_sideMenu()'><b>TC042_Verify_Tips_and_DIY_videos_inside_sideMenu</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC030_Verify_My_Profile()'><b>TC030_Verify_My_Profile</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>89</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC073_View_Service_schedule_3500()'><b>TC073_View_Service_schedule_3500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC086_View_Service_schedule_460_days()'><b>TC086_View_Service_schedule_460_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC089_View_Service_schedule_760_days()'><b>TC089_View_Service_schedule_760_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC092_Verify_Last_Serviced()'><b>TC092_Verify_Last_Serviced</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC039_Verify_My_Vehicle_Documents()'><b>TC039_Verify_My_Vehicle_Documents</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC040_Verify_Owners_Manual()'><b>TC040_Verify_Owners_Manual</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC072_View_Service_schedule_750()'><b>TC072_View_Service_schedule_750</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC076_View_Service_schedule_12500()'><b>TC076_View_Service_schedule_12500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC088_View_Service_schedule_660_days()'><b>TC088_View_Service_schedule_660_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC038_Verify_My_Vehicle_more_details()'><b>TC038_Verify_My_Vehicle_more_details</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>1838</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC080_View_Service_schedule_24500()'><b>TC080_View_Service_schedule_24500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC082_View_Service_schedule_60_days()'><b>TC082_View_Service_schedule_60_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC032_edit_profile_button()'><b>TC032_edit_profile_button</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC074_View_Service_schedule_6500()'><b>TC074_View_Service_schedule_6500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC033_edit_Personal_Details()'><b>TC033_edit_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC075_View_Service_schedule_9500()'><b>TC075_View_Service_schedule_9500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC087_View_Service_schedule_560_days()'><b>TC087_View_Service_schedule_560_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC069_verify_service_type()'><b>TC069_verify_service_type</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC079_View_Service_schedule_21500()'><b>TC079_View_Service_schedule_21500</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.My_Profile_Page_Test.TC034_change_original_Personal_Details()'><b>TC034_change_original_Personal_Details</b><br>Test class: Page_Test.My_Profile_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.My_Profile_Page_Test@12299890</td></tr>
+<tr>
+<td title='Page_Test.Services_Page_Test.TC091_View_Service_schedule_960_days()'><b>TC091_View_Service_schedule_960_days</b><br>Test class: Page_Test.Services_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>Page_Test.Services_Page_Test@4bf48f6</td></tr>
+<tr>
+<td title='Page_Test.Vehicle_Details_test.TC037_Verify_My_Vehicle()'><b>TC037_Verify_My_Vehicle</b><br>Test class: Page_Test.Vehicle_Details_test</td>
+<td></td>
+<td>64</td>
+<td>Page_Test.Vehicle_Details_test@2fba3fc4</td></tr>
+</table><p>
+</body>
+</html>

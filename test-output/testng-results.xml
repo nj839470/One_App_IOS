@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-12T20:11:32 IST" name="Hero_App" finished-at="2025-02-12T20:19:58 IST" duration-ms="506525">
+    <groups>
+    </groups>
+    <test started-at="2025-02-12T20:11:32 IST" name="Login_page" finished-at="2025-02-12T20:19:58 IST" duration-ms="506525">
+      <class name="Page_Test.Login_Page_Test">
+        <test-method is-config="true" signature="OPEN_AND_INSTALL_APP()[pri:0, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:11:32 IST" name="OPEN_AND_INSTALL_APP" finished-at="2025-02-12T20:13:15 IST" duration-ms="103270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OPEN_AND_INSTALL_APP -->
+        <test-method signature="TC001_Setup_Prerequisites()[pri:0, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:13:15 IST" name="TC001_Setup_Prerequisites" finished-at="2025-02-12T20:13:15 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_Setup_Prerequisites -->
+        <test-method signature="TC002_invalidmobileno()[pri:1, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:13:15 IST" name="TC002_invalidmobileno" finished-at="2025-02-12T20:13:30 IST" duration-ms="15389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_invalidmobileno -->
+        <test-method signature="TC003_verify_update_number()[pri:2, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:13:30 IST" name="TC003_verify_update_number" finished-at="2025-02-12T20:14:03 IST" duration-ms="33034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_verify_update_number -->
+        <test-method signature="TC004_Verify_Login_with_short_length_of_mobile_number_credential()[pri:3, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:14:03 IST" name="TC004_Verify_Login_with_short_length_of_mobile_number_credential" finished-at="2025-02-12T20:14:15 IST" duration-ms="11349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_Verify_Login_with_short_length_of_mobile_number_credential -->
+        <test-method signature="TC005_max_digit_mobile_number()[pri:4, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:14:15 IST" name="TC005_max_digit_mobile_number" finished-at="2025-02-12T20:14:26 IST" duration-ms="11531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_max_digit_mobile_number -->
+        <test-method signature="TC006_Terms_of_use_button()[pri:5, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:14:26 IST" name="TC006_Terms_of_use_button" finished-at="2025-02-12T20:15:14 IST" duration-ms="47805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_Terms_of_use_button -->
+        <test-method signature="TC007_Privacy_policy()[pri:6, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:15:14 IST" name="TC007_Privacy_policy" finished-at="2025-02-12T20:16:08 IST" duration-ms="53348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_Privacy_policy -->
+        <test-method signature="TC008_contact_Us()[pri:7, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:16:08 IST" name="TC008_contact_Us" finished-at="2025-02-12T20:16:18 IST" duration-ms="10692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_contact_Us -->
+        <test-method signature="TC009_Continue_as_guest()[pri:8, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:16:18 IST" name="TC009_Continue_as_guest" finished-at="2025-02-12T20:17:13 IST" duration-ms="54812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_Continue_as_guest -->
+        <test-method signature="TC010_Verify_Login_with_valid_credential()[pri:9, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:17:13 IST" name="TC010_Verify_Login_with_valid_credential" finished-at="2025-02-12T20:17:59 IST" duration-ms="45539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010_Verify_Login_with_valid_credential -->
+        <test-method signature="TC011_resend_butn()[pri:10, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:17:59 IST" name="TC011_resend_butn" finished-at="2025-02-12T20:18:06 IST" duration-ms="7690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_resend_butn -->
+        <test-method signature="TC012_inavalid_OTP()[pri:11, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:18:06 IST" name="TC012_inavalid_OTP" finished-at="2025-02-12T20:18:37 IST" duration-ms="30979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_inavalid_OTP -->
+        <test-method signature="TC013_edit_moble()[pri:12, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:18:37 IST" name="TC013_edit_moble" finished-at="2025-02-12T20:19:58 IST" duration-ms="80893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013_edit_moble -->
+        <test-method is-config="true" signature="tear_Down()[pri:0, instance:Page_Test.Login_Page_Test@4d9ac0b4]" started-at="2025-02-12T20:19:58 IST" name="tear_Down" finished-at="2025-02-12T20:19:58 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_Down -->
+      </class> <!-- Page_Test.Login_Page_Test -->
+    </test> <!-- Login_page -->
+  </suite> <!-- Hero_App -->
+</testng-results>

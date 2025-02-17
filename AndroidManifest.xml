@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.customerapp.hero.android.samplespellcheckerservice" >
+    <application
+        android:label="@string/app-debug-connected.apk" >
+        <service
+            android:label="@string/app-debug-connected.apk"
+            android:name=".SampleSpellCheckerService"
+            android:permission="android.permission.BIND_TEXT_SERVICE" >
+            <intent-filter >
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+			<meta-data
+                android:name="android.view.textservice.scs"
+                android:resource="@xml/spellchecker" />
+        </service>
+
+        <activity
+            android:label="app-debug-connected.apk"
+            android:name="com.customerapp.hero.views.activity.HmcDashboard" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

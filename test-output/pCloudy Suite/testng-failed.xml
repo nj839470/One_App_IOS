@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="3" parallel="tests" name="Failed suite [pCloudy Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test(failed)">
+    <parameter name="deviceName" value="OPPO"/>
+    <classes>
+      <class name="Page_Test.Home_Page_Test">
+        <methods>
+          <include name="TC025_Verify_Nearest_Dealer_info"/>
+          <include name="TC021_Verify_RSA"/>
+          <include name="TC024_Select_Locality_For_Nearest_Dealer"/>
+          <include name="TC022_Select_State_For_Nearest_Dealer"/>
+          <include name="TC018__verify_Navigate"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC023_Select_City_For_Nearest_Dealer"/>
+        </methods>
+      </class> <!-- Page_Test.Home_Page_Test -->
+      <class name="Page_Test.Login_Page_Test">
+        <methods>
+          <include name="TC004_max_digit_mobile_number"/>
+          <include name="TC006_Privacy_policy"/>
+          <include name="TC007_contact_Us"/>
+          <include name="TC001_Verify_Login_with_Invalid_credential"/>
+          <include name="TC003_Verify_Login_with_short_length_of_mobile_number_credential"/>
+          <include name="TC005_Terms_of_use_button"/>
+          <include name="TC002_invalidmobileno"/>
+          <include name="TC011_edit_moble"/>
+          <include name="TC010_inavalid_OTP"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC008_Verify_Login_with_valid_credential"/>
+        </methods>
+      </class> <!-- Page_Test.Login_Page_Test -->
+      <class name="Page_Test.Select_Vehicle_Page_Test">
+        <methods>
+          <include name="TC014_Verify_With_31_letter_nick_name"/>
+          <include name="TC012_verify_Nick_Name"/>
+          <include name="TC013_Verify_With_30_letter_nick_name"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC015_Verify_With_29_letter_nick_name"/>
+        </methods>
+      </class> <!-- Page_Test.Select_Vehicle_Page_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="deviceName" value="Google"/>
+    <classes>
+      <class name="Page_Test.Services_Page_Test">
+        <methods>
+          <include name="TC093_Verify_all_tips_list"/>
+          <include name="TC070_verify_Dealer_information"/>
+          <include name="OPEN_AND_INSTALL_APP"/>
+          <include name="TC094_Verify_all_DIY_Videos_list"/>
+        </methods>
+      </class> <!-- Page_Test.Services_Page_Test -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [pCloudy Suite] -->

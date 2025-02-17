@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Hero_App">
+	<listeners>
+		<listener class-name="com.utility.listner"></listener>
+	</listeners>
+	<test name="Login_page" enabled="true">
+		<classes>
+			<class name="Page_Test.Login_Page_Test" />
+		</classes>
+	</test>
+	<test name="Select_Vehicle_Page" enabled="false">
+		<classes>
+			<class name="Page_Test.Select_Vehicle_Page_Test" />
+		</classes>
+	</test>
+	<test name="Home_Page_Test" enabled="false">
+		<classes>
+			<class name="Page_Test.Home_Page_Test" />
+		</classes>
+	</test>
+	<test name="My_Profile_Page_Test" enabled="false">
+		<classes>
+			<class name="Page_Test.My_Profile_Page_Test" />
+		</classes>
+	</test>
+	<test name="Vehicle_Details_test" enabled="false">
+		<classes>
+			<class name="Page_Test.Vehicle_Details_test" />
+		</classes>
+	</test>
+	<test name="Refer_a_friend_test" enabled="false">
+		<classes>
+			<class name="Page_Test.Refer_a_friend_test" />
+		</classes>
+	</test>
+	<test name="Safety_Measures_and_Symbols_Glossary_Test" enabled="false">
+		<classes>
+			<class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test" />
+		</classes>
+	</test>
+	<test name="Feedback_and_About_Hero_test" enabled="false">
+		<classes>
+			<class name="Page_Test.Feedback_and_About_Hero_test" />
+		</classes>
+	</test>
+	<test name="Services_Page_Test" enabled="false">
+		<classes>
+			<class name="Page_Test.Services_Page_Test" />
+		</classes>
+	</test>
+	<test name="GoodLife_test" enabled="false">
+		<classes>
+			<class name="Page_Test.GoodLife_test" />
+		</classes>
+	</test>
+	<test name="GoodLifePage_Test" enabled="false">
+		<classes>
+			<class name="Page_Test.GoodLifePage_Test" />
+		</classes>
+	</test>
+	<test name="E_Shop_test" enabled="false">
+		<classes>
+			<class name="Page_Test.E_Shop_test" />
+		</classes>
+	</test>
+	<test name="Book_Service_test" enabled="false">
+		<classes>
+			<class name="Page_Test.Book_Service_test" />
+		</classes>
+	</test>
+	<test name="All test class" enabled="false">
+		<classes>
+			<class name="Page_Test.Login_Page_Test" />
+			<class name="Page_Test.Select_Vehicle_Page_Test" />
+			<class name="Page_Test.Home_Page_Test" />
+			<class name="Page_Test.My_Profile_Page_Test" />
+			<class name="Page_Test.Vehicle_Details_test" />
+			<class name="Page_Test.Refer_a_friend_test" />
+			<class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test" />
+			<class name="Page_Test.Feedback_and_About_Hero_test" />
+			<class name="Page_Test.Services_Page_Test" />
+			<class name="Page_Test.GoodLifePage_Test" />
+			<!-- <class name="Page_Test.GoodLife_test" />-->
+			<class name="Page_Test.E_Shop_test" />
+		</classes>
+	</test>
+</suite> 
+	

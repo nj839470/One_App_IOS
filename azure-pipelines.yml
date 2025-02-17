@@ -1,0 +1,109 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+trigger:
+  branches:
+    exclude:
+    - DEV
+    - UAT
+
+schedules:
+- cron: '30 23 * * *'
+  displayName: Daily build
+  branches:
+    include:
+    - main
+  always: true
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+
+- job: build
+  timeoutInMinutes: 360
+
+  steps:
+  - task: Maven@3
+    timeoutInMinutes: 150
+    continueOnError: true
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean install'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.17'
+      mavenVersionOption: 'Default'
+      mavenOptions: '-Xmx3072m'
+      mavenAuthenticateFeed: false
+      effectivePomSkip: false
+      sonarQubeRunAnalysis: false
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(agent.builddirectory)'
+      Contents: '**/Report/Test-Report*'
+      TargetFolder: '$(build.artifactstagingdirectory)'
+      
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
+      
+  - bash: |
+      echo "Listing contents of surefire-reports directory:"
+      ls -l $(System.DefaultWorkingDirectory)/target/surefire-reports
+    displayName: 'List Surefire Reports'
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)/target'
+      Contents: '**/surefire-reports/testng-results.xml'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+  - task: PublishBuildArtifacts@1
+    condition: always()
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'testng-results'
+      publishLocation: 'Container'
+      
+  - bash: |
+      echo "Checking the presence of testng-results.xml..."
+      ls -l $(Build.ArtifactStagingDirectory)
+    displayName: 'Check testng-results.xml Presence'
+
+  - bash: |
+      echo "Installing Python dependencies with retry logic..."
+      for i in {1..3}; do  # Retry loop
+          python -m pip install --upgrade pip && pip install pandas && break || sleep 15
+      done
+    displayName: 'Install Python Dependencies'
+    timeoutInMinutes: 10
+
+  - bash: |
+      echo "Running Python analysis on test results..."
+      python analyze_test_results.py "$(Build.ArtifactStagingDirectory)/surefire-reports/testng-results.xml"
+    displayName: 'Analyze Test Results'
+  
+  - task: Bash@3
+    inputs:
+      targetType: 'inline'
+      script: |
+        mkdir $(Build.ArtifactStagingDirectory)/report
+        cp $(System.DefaultWorkingDirectory)/passed_tests.csv $(System.DefaultWorkingDirectory)/failed_tests.csv  $(Build.ArtifactStagingDirectory)/report/
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Analyzed Test Results'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/report'
+      ArtifactName: 'analyzed-test-results'
+      publishLocation: 'Container'
