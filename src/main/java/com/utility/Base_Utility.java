@@ -60,8 +60,8 @@ public class Base_Utility
 	String excelpath = System.getProperty("user.dir") + "/Data/data1.xlsx";
 	public static IOSDriver driver;
 	String enveronment = config_getdata("env");
-	public static String userName = "nitesh.jha.ext";
-	public static String accessKey = "h29i4niokYcpZ3XBnfWWiWd2OCj63w2bva0Tx6d1XGTFlhkgZw";
+	public static String userName = "nitesh.jhaintellicredence";
+	public static String accessKey = "LT_pdTpLmaeK7kbQOAdzZ6B28TN3ZQe0AMG5sByOIKzxWq0ngT";
 
 	@BeforeTest
 	public void OPEN_AND_INSTALL_APP() {
@@ -95,7 +95,7 @@ public class Base_Utility
 				ltOptions.put("platformName", "ios");
 				ltOptions.put("deviceName", "iPhone.*");
 				if (enveronment.equalsIgnoreCase("prod")) {
-				ltOptions.put("app", "lt://APP10160341241733457690808408");
+				ltOptions.put("app", "lt://APP10160361821740414249380285");
 				} else {
 					ltOptions.put("app", "lt://APP10160401231739365633247837");
 				}
