@@ -40,10 +40,23 @@ public class Home_Page extends Base_Utility {
 	private List<WebElement> all_vehicle_inside_drop_down;
 	@FindBy(xpath = "//XCUIElementTypeButton[contains(@name,'crossGreyIcon')]")
 	private WebElement select_vehicle_close_btn;
+	@FindBy(xpath = "(//XCUIElementTypeButton[contains(@name,'Allow')])[1]")
+	private WebElement Allow;
+
+	public WebElement Allow() {
+		return Allow;
+	}
 
 	public void all_vehicle_inside_drop_down() throws InterruptedException {
 
 		Custom_click(vehicle_drop_down, " Drop down");
+		try {
+			if (Allow.isDisplayed())
+				Custom_click(Allow, "Allow location");
+		} catch (Exception e) {
+			Message("Allow loction pop is not given");
+
+		}
 		Custom_click(all_vehicle_inside_drop_down.get(0), "Select Vehicle");
 		Custom_click(vehicle_drop_down, " Drop down");
 		Thread.sleep(2000);
@@ -70,7 +83,7 @@ public class Home_Page extends Base_Utility {
 	public void notification_count() {
 		try {
 			for (int i = 0; i < notification_count.size(); i++) {
-				msg(notification_count.get(i + 1), "");
+				msg(notification_count.get(i), "");
 				i++;
 			}
 		} catch (Exception e) {
@@ -78,7 +91,7 @@ public class Home_Page extends Base_Utility {
 		}
 	}
 
-	@FindBy(xpath = "//XCUIElementTypeButton[@name='Back']")
+	@FindBy(xpath = "//XCUIElementTypeButton[@name='back']")
 	private WebElement notification_back;
 
 	public WebElement notification_back() {
@@ -133,7 +146,7 @@ public class Home_Page extends Base_Utility {
 //*************************Navigate Page**********************
 	@FindBy(xpath = "//XCUIElementTypeStaticText[@name='Navigate']")
 	private WebElement Navigate_menu;
-	
+
 	public WebElement Navigate_menu() {
 		return Navigate_menu;
 	}
@@ -579,25 +592,13 @@ public class Home_Page extends Base_Utility {
 		return Technical_Support;
 	}
 
-	@FindBy(xpath = "")
-	private WebElement Technical_Support_Manager_Name;
+	@FindBy(className = "XCUIElementTypeStaticText")
+	private List<WebElement> techinalManagerInfo;
 
-	public WebElement Technical_Support_Manager_Name() {
-		return Technical_Support_Manager_Name;
-	}
-
-	@FindBy(xpath = "")
-	private WebElement Technical_Support_Manager_Address;
-
-	public WebElement Technical_Support_Manager_Address() {
-		return Technical_Support_Manager_Address;
-	}
-
-	@FindBy(xpath = "")
-	private WebElement Technical_Support_Manager_Contact_Number;
-
-	public WebElement Technical_Support_Manager_Contact_Number() {
-		return Technical_Support_Manager_Contact_Number;
+	public void technicalManagerInfo() {
+		for (int i = 1; i < techinalManagerInfo.size(); i++) {
+			Message(techinalManagerInfo.get(i).getText());
+		}
 	}
 
 	@FindBy(xpath = "//XCUIElementTypeStaticText[@name='No data found']")

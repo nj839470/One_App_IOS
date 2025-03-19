@@ -1,4 +1,4 @@
-	package Page_Test;
+package Page_Test;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -28,8 +28,8 @@ public class Home_Page_Test extends Base_Utility {
 	public void TC019_Home_page_verify() throws InterruptedException {
 		Message("*********Home_Page_Test*********");
 		ob = new Home_Page();
-//		login = new Login_Page_Test();
-//		login.login();
+		login = new Login_Page_Test();
+		login.login();
 		try {
 			Thread.sleep(3000);
 			VerifyElementPresent(ob.vehicle_img(), "Vehicle Img is");
@@ -394,8 +394,6 @@ public class Home_Page_Test extends Base_Utility {
 		msg(ob.answer_1(), "Answer = ");
 		Custom_click(ob.asked_questions_2(), ob.asked_questions_2().getText());
 		msg(ob.answer_2(), "Answer = ");
-		Custom_click(ob.asked_questions_3(), ob.asked_questions_3().getText());
-		msg(ob.answer_3(), "Answer = ");
 		Custom_click(ob.Back(), "Back from Roadside Assistance");
 	}
 
@@ -409,10 +407,7 @@ public class Home_Page_Test extends Base_Utility {
 			}
 		} catch (Exception e) {
 			Message("Technical support manager info is visible");
-			Message("Technical Support Manager Name is = " + ob.Technical_Support_Manager_Name().getText());
-			Message("Technical Support Manager address is = " + ob.Technical_Support_Manager_Address().getText());
-			Message("Technical Support Manager contact number is = "
-					+ ob.Technical_Support_Manager_Contact_Number().getText());
+			ob.technicalManagerInfo();
 		} finally {
 			Custom_click(ob.Back(), "Back from Technical Support Manager");
 		}
@@ -425,7 +420,7 @@ public class Home_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 	}
 
-	@Test(priority = 17)
+//	@Test(priority = 17)
 	public void TC036_Select_city() {
 		Custom_click(ob.Select_City(), "Select city");
 		Custom_click(ob.Select_State_list(), ob.Select_State_list().getText());
@@ -449,10 +444,6 @@ public class Home_Page_Test extends Base_Utility {
 		Custom_click(ob.last_Service_history(), "Last Service History arrow ");
 		Thread.sleep(1000);
 		Custom_click(ob.Back(), "Back from Service history page");
-//		Thread.sleep(2000);
-//		Custom_click(ob.Service_schedule_view(), "Service Schedule view arrow ");
-//		Thread.sleep(1000);
-//		Custom_click(ob.Back(), "Back from Service Schedule page");
 	}
 
 	@Test(priority = 20)

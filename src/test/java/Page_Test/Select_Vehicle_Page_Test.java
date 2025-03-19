@@ -101,7 +101,7 @@ public class Select_Vehicle_Page_Test extends Base_Utility {
 		Custom_click(ob.click_first_vehicle(), " Select first vehicle");
 		VerifyElementPresent(ob.continue_button(), "Continue Button after select vehicle is");
 		Custom_click(ob.continue_button(), "Continue Button after select vehicle");
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		try {
 			if (ob.Allow().isDisplayed()) {
 				Custom_click(ob.Allow(), "Allow location");

@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.utility.listner"></listener>
 	</listeners>
-	<test name="Login_page" enabled="true">
+	<test name="Login_page" enabled="false">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
 		</classes>
@@ -14,7 +14,7 @@
 			<class name="Page_Test.Select_Vehicle_Page_Test" />
 		</classes>
 	</test>
-	<test name="Home_Page_Test" enabled="false">
+	<test name="Home_Page_Test" enabled="true">
 		<classes>
 			<class name="Page_Test.Home_Page_Test" />
 		</classes>
@@ -49,26 +49,6 @@
 			<class name="Page_Test.Services_Page_Test" />
 		</classes>
 	</test>
-	<test name="GoodLife_test" enabled="false">
-		<classes>
-			<class name="Page_Test.GoodLife_test" />
-		</classes>
-	</test>
-	<test name="GoodLifePage_Test" enabled="false">
-		<classes>
-			<class name="Page_Test.GoodLifePage_Test" />
-		</classes>
-	</test>
-	<test name="E_Shop_test" enabled="false">
-		<classes>
-			<class name="Page_Test.E_Shop_test" />
-		</classes>
-	</test>
-	<test name="Book_Service_test" enabled="false">
-		<classes>
-			<class name="Page_Test.Book_Service_test" />
-		</classes>
-	</test>
 	<test name="All test class" enabled="false">
 		<classes>
 			<class name="Page_Test.Login_Page_Test" />
@@ -80,9 +60,6 @@
 			<class name="Page_Test.Safety_Measures_and_Symbols_Glossary_Test" />
 			<class name="Page_Test.Feedback_and_About_Hero_test" />
 			<class name="Page_Test.Services_Page_Test" />
-			<class name="Page_Test.GoodLifePage_Test" />
-			<!-- <class name="Page_Test.GoodLife_test" />-->
-			<class name="Page_Test.E_Shop_test" />
 		</classes>
 	</test>
 </suite> 

@@ -4,24 +4,21 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="Login_page(failed)">
+  <test thread-count="5" name="Home_Page_Test(failed)">
     <classes>
-      <class name="Page_Test.Login_Page_Test">
+      <class name="Page_Test.Home_Page_Test">
         <methods>
-          <include name="TC010_Verify_Login_with_valid_credential"/>
-          <include name="TC003_verify_update_number"/>
-          <include name="TC005_max_digit_mobile_number"/>
-          <include name="TC013_edit_moble"/>
-          <include name="TC006_Terms_of_use_button"/>
+          <include name="TC042_Accessories_in_PAM"/>
+          <include name="TC043_View_All_Accessories_in_PAM"/>
+          <include name="TC041_Merchandise_in_PAM"/>
+          <include name="TC040_Lubricant_in_PAM"/>
           <include name="tear_Down"/>
+          <include name="TC038_verify_Service_at_home_page"/>
           <include name="OPEN_AND_INSTALL_APP"/>
-          <include name="TC009_Continue_as_guest"/>
-          <include name="TC012_inavalid_OTP"/>
-          <include name="TC004_Verify_Login_with_short_length_of_mobile_number_credential"/>
-          <include name="TC011_resend_butn"/>
-          <include name="TC007_Privacy_policy"/>
+          <include name="TC039_Helmets_in_PAM"/>
+          <include name="TC045_verify_Benifits_Vehicle_Exchange"/>
         </methods>
-      </class> <!-- Page_Test.Login_Page_Test -->
+      </class> <!-- Page_Test.Home_Page_Test -->
     </classes>
-  </test> <!-- Login_page(failed) -->
+  </test> <!-- Home_Page_Test(failed) -->
 </suite> <!-- Failed suite [Hero_App] -->

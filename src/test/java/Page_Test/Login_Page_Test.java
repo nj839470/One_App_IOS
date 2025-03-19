@@ -1,4 +1,5 @@
 package Page_Test;
+
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Listeners;
@@ -58,6 +59,12 @@ public class Login_Page_Test extends Base_Utility {
 		Thread.sleep(2000);
 		Custom_click(ob.Continue_guest_btn(), "Continue as gest button");
 		Thread.sleep(2000);
+		try {
+			if (ob.Allow().isDisplayed())
+				Custom_click(ob.Allow(), "Allow “Hero App” to use your location?");
+		} catch (Exception e) {
+			Message("No Allow pop-up given");
+		}
 		Custom_click(ob.back_page(), "Back from Welcome! page ");
 	}
 
@@ -255,14 +262,12 @@ public class Login_Page_Test extends Base_Utility {
 		Custom_click(ob1.click_first_vehicle(), " Select first vehicle");
 		Custom_click(ob1.continue_button(), "Continue Button after select vehicle");
 		Thread.sleep(5000);
-		if (device.equalsIgnoreCase("pcloudy")) {
-			try {
-				if (ob.Allow().isDisplayed()) {
-					Custom_click(ob.Allow(), "Allow location");
-				}
-			} catch (Exception e) {
-				Message("Allow loction pop is not given");
+		try {
+			if (ob1.Allow().isDisplayed()) {
+				Custom_click(ob1.Allow(), "Allow location");
 			}
+		} catch (Exception e) {
+			Message("Allow loction pop is not given");
 		}
 	}
 
