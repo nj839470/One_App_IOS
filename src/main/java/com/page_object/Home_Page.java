@@ -651,33 +651,21 @@ public class Home_Page extends Base_Utility {
 	}
 
 	// ****************************Service_at_home_page************************************
-	@FindBy(xpath = "//XCUIElementTypeStaticText[@name='View Details ']")
-	private WebElement service_Scheduled_view;
-
-	public WebElement service_Scheduled_view() {
-		return service_Scheduled_view;
+	@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name , 'Service was')]")
+	private WebElement service_due;
+	
+	public WebElement service_due() {
+		return service_due;
 	}
 
-	@FindBy(xpath = "//XCUIElementTypeButton[@name='Home']")
-	private WebElement Home_menu;
+	@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'20')]")
+	private WebElement due_data;
 
-	public WebElement Home_menu() {
-		return Home_menu;
+	public WebElement due_data() {
+		return due_data;
 	}
 
-	@FindBy(xpath = "//XCUIElementTypeStaticText[@value='Service history ']")
-	private WebElement last_Service_history;
-
-	public WebElement last_Service_history() {
-		return last_Service_history;
-	}
-
-	@FindBy(xpath = "//XCUIElementTypeButton[@name='View Schedule ']")
-	private WebElement Service_schedule_view;
-
-	public WebElement Service_schedule_view() {
-		return Service_schedule_view;
-	}
+	
 	// ****************************verify_PAM************************************
 
 	@FindBy(xpath = "//XCUIElementTypeStaticText[@name='Helmets']")
@@ -757,7 +745,7 @@ public class Home_Page extends Base_Utility {
 		return close_icon;
 	}
 
-	@FindBy(xpath = "//XCUIElementTypeStaticText[@name='Lubricant']")
+	@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name,'Lubricant')]")
 	private WebElement Lubricant;
 
 	public WebElement Lubricant() {

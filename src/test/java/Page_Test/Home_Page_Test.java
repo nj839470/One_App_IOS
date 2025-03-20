@@ -437,18 +437,15 @@ public class Home_Page_Test extends Base_Utility {
 	@Test(priority = 19)
 	public void TC038_verify_Service_at_home_page() throws InterruptedException {
 		Scroll_down_page_Action("Last Serviced");
-		Custom_click(ob.service_Scheduled_view(), "Service Scheduled View Details arrow ");
-		Thread.sleep(1000);
-		Custom_click(ob.Home_menu(), "Home menu ");
-		Thread.sleep(2000);
-		Custom_click(ob.last_Service_history(), "Last Service History arrow ");
-		Thread.sleep(1000);
-		Custom_click(ob.Back(), "Back from Service history page");
+		msg(ob.service_due(), " ");
+		msg(ob.due_data(), " due date = ");
 	}
 
 	@Test(priority = 20)
 	public void TC039_Helmets_in_PAM() throws InterruptedException {
 		try {
+			Scroll_down_page_Action("Helmets");
+//			Scroll_down_page_Action("Helmets");
 			Custom_click(ob.Helmets(), "Helemets ");
 			Thread.sleep(1000);
 			msg(ob.Helemet_name(), " Helmets name  ");

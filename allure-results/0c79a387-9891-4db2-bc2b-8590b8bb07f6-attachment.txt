@@ -1,6 +1,0 @@
-Cancel Background  Unable to Click with error: Expected condition failed: waiting for element to be clickable: [[IOSDriver:  on IOS (47f7e5f6-4192-4da1-a6ee-4b30dc22a859)] -> xpath: //XCUIElementTypeImage[@name='UICloseButtonBackground']] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '22.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:permissions: {"com.customerapp.hero": {"..., appium:platformVersion: 17.7, appium:showXcodeLog: true, appium:takesScreenshot: true, appium:udid: 00008120-0004798A21F9A01E, appium:webStorageEnabled: false, platformName: IOS}
-Session ID: 47f7e5f6-4192-4da1-a6ee-4b30dc22a859

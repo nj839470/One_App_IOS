@@ -103,11 +103,6 @@
                     <div class="method-list-content failed suite-Hero_App">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC038_verify_Service_at_home_page">TC038_verify_Service_at_home_page</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC039_Helmets_in_PAM">TC039_Helmets_in_PAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,6 +124,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC043_View_All_Accessories_in_PAM">TC043_View_All_Accessories_in_PAM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC044_verify_Check_Out_at_home_page">TC044_verify_Check_Out_at_home_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -237,7 +237,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC044_verify_Check_Out_at_home_page">TC044_verify_Check_Out_at_home_page</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Hero_App" title="Page_Test.Home_Page_Test" class="method navigator-link" hash-for-method="TC038_verify_Service_at_home_page">TC038_verify_Service_at_home_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Hero_App -->
@@ -260,49 +260,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC038_verify_Service_at_home_page">
-                  </a> <!-- TC038_verify_Service_at_home_page -->
-                  <span class="method-name">TC038_verify_Service_at_home_page</span>
-                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeStaticText[@name=&apos;View Details &apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC038_verify_Service_at_home_page(Home_Page_Test.java:440)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeStaticText[@name=&apos;View Details &apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.isDisplayed(Unknown Source)
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:288)
-	... 27 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC039_Helmets_in_PAM">
                   </a> <!-- TC039_Helmets_in_PAM -->
                   <span class="method-name">TC039_Helmets_in_PAM</span>
@@ -311,20 +268,20 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC039_Helmets_in_PAM(Home_Page_Test.java:492)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC039_Helmets_in_PAM(Home_Page_Test.java:489)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -354,20 +311,20 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC040_Lubricant_in_PAM(Home_Page_Test.java:529)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC040_Lubricant_in_PAM(Home_Page_Test.java:526)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -397,20 +354,20 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC041_Merchandise_in_PAM(Home_Page_Test.java:567)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC041_Merchandise_in_PAM(Home_Page_Test.java:564)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -440,20 +397,20 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC042_Accessories_in_PAM(Home_Page_Test.java:606)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC042_Accessories_in_PAM(Home_Page_Test.java:603)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -478,25 +435,44 @@ Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
                   <a name="TC043_View_All_Accessories_in_PAM">
                   </a> <!-- TC043_View_All_Accessories_in_PAM -->
                   <span class="method-name">TC043_View_All_Accessories_in_PAM</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test interrupted: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at Page_Test.Home_Page_Test.TC043_View_All_Accessories_in_PAM(Home_Page_Test.java:635)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC044_verify_Check_Out_at_home_page">
+                  </a> <!-- TC044_verify_Check_Out_at_home_page -->
+                  <span class="method-name">TC044_verify_Check_Out_at_home_page</span>
                   <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC043_View_All_Accessories_in_PAM(Home_Page_Test.java:640)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC044_verify_Check_Out_at_home_page(Home_Page_Test.java:652)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -526,20 +502,20 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
-	at com.utility.Base_Utility.Custom_click(Base_Utility.java:306)
-	at Page_Test.Home_Page_Test.TC045_verify_Benifits_Vehicle_Exchange(Home_Page_Test.java:671)
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
+	at com.utility.Base_Utility.Custom_click(Base_Utility.java:305)
+	at Page_Test.Home_Page_Test.TC045_verify_Benifits_Vehicle_Exchange(Home_Page_Test.java:668)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Command: [2d527b15-3d3a-4bc4-b775-e98d51d71e27, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-001179810A33401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11329, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
-Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
+Command: [f74a960f-c9c4-484d-98da-005583430dc9, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&apos;Back&apos;]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.customerapp.hero, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 14 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 16, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008110-001A70C41EE1401E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11198, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: f74a960f-c9c4-484d-98da-005583430dc9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -695,9 +671,9 @@ Session ID: 2d527b15-3d3a-4bc4-b775-e98d51d71e27
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC044_verify_Check_Out_at_home_page">
-                  </a> <!-- TC044_verify_Check_Out_at_home_page -->
-                  <span class="method-name">TC044_verify_Check_Out_at_home_page</span>
+                  <a name="TC038_verify_Service_at_home_page">
+                  </a> <!-- TC038_verify_Service_at_home_page -->
+                  <span class="method-name">TC038_verify_Service_at_home_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -761,112 +737,112 @@ data.addRows(26);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC031_Verify_RSA')
 data.setCell(0, 2, 'Page_Test.Home_Page_Test')
-data.setCell(0, 3, 271352);
+data.setCell(0, 3, 319135);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC019_Home_page_verify')
 data.setCell(1, 2, 'Page_Test.Home_Page_Test')
-data.setCell(1, 3, 157657);
+data.setCell(1, 3, 182163);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC025_verify_Vehicle_valution')
 data.setCell(2, 2, 'Page_Test.Home_Page_Test')
-data.setCell(2, 3, 114494);
+data.setCell(2, 3, 127005);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC024_verify_Vehicle_condition')
 data.setCell(3, 2, 'Page_Test.Home_Page_Test')
-data.setCell(3, 3, 52598);
+data.setCell(3, 3, 59738);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC026_Verify_RC_Documents')
 data.setCell(4, 2, 'Page_Test.Home_Page_Test')
-data.setCell(4, 3, 52166);
+data.setCell(4, 3, 58682);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC042_Accessories_in_PAM')
+data.setCell(5, 1, 'TC044_verify_Check_Out_at_home_page')
 data.setCell(5, 2, 'Page_Test.Home_Page_Test')
-data.setCell(5, 3, 50535);
+data.setCell(5, 3, 51940);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TC041_Merchandise_in_PAM')
 data.setCell(6, 2, 'Page_Test.Home_Page_Test')
-data.setCell(6, 3, 48191);
+data.setCell(6, 3, 51641);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC027_Verify_Insurance_Documents')
+data.setCell(7, 1, 'TC040_Lubricant_in_PAM')
 data.setCell(7, 2, 'Page_Test.Home_Page_Test')
-data.setCell(7, 3, 47067);
+data.setCell(7, 3, 51562);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC040_Lubricant_in_PAM')
+data.setCell(8, 1, 'TC042_Accessories_in_PAM')
 data.setCell(8, 2, 'Page_Test.Home_Page_Test')
-data.setCell(8, 3, 45810);
+data.setCell(8, 3, 51106);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC043_View_All_Accessories_in_PAM')
+data.setCell(9, 1, 'TC039_Helmets_in_PAM')
 data.setCell(9, 2, 'Page_Test.Home_Page_Test')
-data.setCell(9, 3, 45674);
+data.setCell(9, 3, 49395);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC039_Helmets_in_PAM')
+data.setCell(10, 1, 'TC027_Verify_Insurance_Documents')
 data.setCell(10, 2, 'Page_Test.Home_Page_Test')
-data.setCell(10, 3, 45638);
+data.setCell(10, 3, 49368);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TC022_verify_Exchange')
 data.setCell(11, 2, 'Page_Test.Home_Page_Test')
-data.setCell(11, 3, 41453);
+data.setCell(11, 3, 46304);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC021_verify_Navigate')
+data.setCell(12, 1, 'TC020_verify_SOS')
 data.setCell(12, 2, 'Page_Test.Home_Page_Test')
-data.setCell(12, 3, 40047);
+data.setCell(12, 3, 43828);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC020_verify_SOS')
+data.setCell(13, 1, 'TC021_verify_Navigate')
 data.setCell(13, 2, 'Page_Test.Home_Page_Test')
-data.setCell(13, 3, 38689);
+data.setCell(13, 3, 41910);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'TC028_Verify_PUC_Documents')
 data.setCell(14, 2, 'Page_Test.Home_Page_Test')
-data.setCell(14, 3, 36281);
+data.setCell(14, 3, 38766);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'TC034_Verify_Technical_Support_Manager')
 data.setCell(15, 2, 'Page_Test.Home_Page_Test')
-data.setCell(15, 3, 35843);
+data.setCell(15, 3, 36220);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC045_verify_Benifits_Vehicle_Exchange')
+data.setCell(16, 1, 'TC032_Renew_RSA')
 data.setCell(16, 2, 'Page_Test.Home_Page_Test')
-data.setCell(16, 3, 34933);
+data.setCell(16, 3, 31753);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TC032_Renew_RSA')
+data.setCell(17, 1, 'TC043_View_All_Accessories_in_PAM')
 data.setCell(17, 2, 'Page_Test.Home_Page_Test')
-data.setCell(17, 3, 30321);
+data.setCell(17, 3, 31649);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TC038_verify_Service_at_home_page')
+data.setCell(18, 1, 'TC023_verify_Vehicle_details')
 data.setCell(18, 2, 'Page_Test.Home_Page_Test')
-data.setCell(18, 3, 28664);
+data.setCell(18, 3, 28882);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'TC033_frequently_asked_questions')
 data.setCell(19, 2, 'Page_Test.Home_Page_Test')
-data.setCell(19, 3, 27015);
+data.setCell(19, 3, 28157);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TC023_verify_Vehicle_details')
+data.setCell(20, 1, 'TC030_Verify_Relationship_Manager')
 data.setCell(20, 2, 'Page_Test.Home_Page_Test')
-data.setCell(20, 3, 26671);
+data.setCell(20, 3, 26795);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'TC030_Verify_Relationship_Manager')
+data.setCell(21, 1, 'TC045_verify_Benifits_Vehicle_Exchange')
 data.setCell(21, 2, 'Page_Test.Home_Page_Test')
-data.setCell(21, 3, 24573);
+data.setCell(21, 3, 26506);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'TC037_View_dealer_name_and_address')
 data.setCell(22, 2, 'Page_Test.Home_Page_Test')
-data.setCell(22, 3, 21147);
+data.setCell(22, 3, 21010);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'TC044_verify_Check_Out_at_home_page')
+data.setCell(23, 1, 'TC029_Verify_Challans_Documents')
 data.setCell(23, 2, 'Page_Test.Home_Page_Test')
-data.setCell(23, 3, 19755);
+data.setCell(23, 3, 16257);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'TC029_Verify_Challans_Documents')
+data.setCell(24, 1, 'TC038_verify_Service_at_home_page')
 data.setCell(24, 2, 'Page_Test.Home_Page_Test')
-data.setCell(24, 3, 14996);
+data.setCell(24, 3, 14250);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'TC035_Verify_Dealer_Locator')
 data.setCell(25, 2, 'Page_Test.Home_Page_Test')
-data.setCell(25, 3, 10090);
+data.setCell(25, 3, 11182);
 window.suiteTableData['Hero_App']= { tableData: data, tableDiv: 'times-div-Hero_App'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 minutes</span>
+              <span class="suite-total-time">Total running time: 24 minutes</span>
               <div id="times-div-Hero_App">
               </div> <!-- times-div-Hero_App -->
             </div> <!-- times-div -->
@@ -899,125 +875,125 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TC019_Home_page_verify</span>
-                <span class="method-start">112713 ms</span>
+                <span class="method-start">113950 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC020_verify_SOS</span>
-                <span class="method-start">270429 ms</span>
+                <span class="method-start">296171 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC021_verify_Navigate</span>
-                <span class="method-start">309121 ms</span>
+                <span class="method-start">340002 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC022_verify_Exchange</span>
-                <span class="method-start">349170 ms</span>
+                <span class="method-start">381915 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC023_verify_Vehicle_details</span>
-                <span class="method-start">390627 ms</span>
+                <span class="method-start">428223 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC024_verify_Vehicle_condition</span>
-                <span class="method-start">417300 ms</span>
+                <span class="method-start">457107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC025_verify_Vehicle_valution</span>
-                <span class="method-start">469900 ms</span>
+                <span class="method-start">516847 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC026_Verify_RC_Documents</span>
-                <span class="method-start">584397 ms</span>
+                <span class="method-start">643854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC027_Verify_Insurance_Documents</span>
-                <span class="method-start">636565 ms</span>
+                <span class="method-start">702539 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC028_Verify_PUC_Documents</span>
-                <span class="method-start">683634 ms</span>
+                <span class="method-start">751909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC029_Verify_Challans_Documents</span>
-                <span class="method-start">719917 ms</span>
+                <span class="method-start">790678 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC030_Verify_Relationship_Manager</span>
-                <span class="method-start">734916 ms</span>
+                <span class="method-start">806937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC031_Verify_RSA</span>
-                <span class="method-start">759492 ms</span>
+                <span class="method-start">833735 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC032_Renew_RSA</span>
-                <span class="method-start">1030847 ms</span>
+                <span class="method-start">1152873 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC033_frequently_asked_questions</span>
-                <span class="method-start">1061172 ms</span>
+                <span class="method-start">1184629 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC034_Verify_Technical_Support_Manager</span>
-                <span class="method-start">1088190 ms</span>
+                <span class="method-start">1212791 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC035_Verify_Dealer_Locator</span>
-                <span class="method-start">1124035 ms</span>
+                <span class="method-start">1249013 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC037_View_dealer_name_and_address</span>
-                <span class="method-start">1134127 ms</span>
+                <span class="method-start">1260198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC038_verify_Service_at_home_page</span>
-                <span class="method-start">1155276 ms</span>
+                <span class="method-start">1281211 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC039_Helmets_in_PAM</span>
-                <span class="method-start">1184598 ms</span>
+                <span class="method-start">1295464 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC040_Lubricant_in_PAM</span>
-                <span class="method-start">1230789 ms</span>
+                <span class="method-start">1345882 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC041_Merchandise_in_PAM</span>
-                <span class="method-start">1277213 ms</span>
+                <span class="method-start">1398202 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC042_Accessories_in_PAM</span>
-                <span class="method-start">1326067 ms</span>
+                <span class="method-start">1450552 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC043_View_All_Accessories_in_PAM</span>
-                <span class="method-start">1377200 ms</span>
+                <span class="method-start">1502423 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC044_verify_Check_Out_at_home_page</span>
-                <span class="method-start">1423381 ms</span>
+                <span class="method-start">1534857 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC045_verify_Benifits_Vehicle_Exchange</span>
-                <span class="method-start">1443139 ms</span>
+                <span class="method-start">1588586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tear_Down</span>
-                <span class="method-start">1479253 ms</span>
+                <span class="method-start">1615960 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

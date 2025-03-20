@@ -38,7 +38,7 @@ public class listner extends Base_Utility implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		test = test.log(Status.FAIL, "Test Case Fail");
-		test = test.addScreenCaptureFromPath(getcapcture(result.getName()));
+		test = test.addScreenCaptureFromBase64String(get_Screen_shot(result.getName()));
 		getcapcture(result.getName());
 		extent_test.set(test);
 
@@ -46,7 +46,7 @@ public class listner extends Base_Utility implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 		test = test.log(Status.SKIP, "Test Case Skip");
-		test = test.addScreenCaptureFromPath(getcapcture(result.getName()));
+		test = test.addScreenCaptureFromBase64String(get_Screen_shot(result.getName()));
 		getcapcture(result.getName());
 		extent_test.set(test);
 	}
@@ -71,6 +71,7 @@ public class listner extends Base_Utility implements ITestListener {
 		}
 		return destination;
 	}
+
 	public String get_Screen_shot(String screenshot_name) {
 		try {
 			TakesScreenshot ts = (TakesScreenshot) driver;
@@ -78,14 +79,15 @@ public class listner extends Base_Utility implements ITestListener {
 			Allure.addAttachment(screenshot_name,
 					new ByteArrayInputStream(java.util.Base64.getDecoder().decode(source)));
 			System.out.println("Screenshot attached to Allure report.");
-
+			return source;
 		} catch (Exception e) {
-
-			Message("Screenshot attached to Allure report." + e.getMessage());
-			System.out.println("Screenshot not attached due to an error.");
+			Message("Screenshot not attached due to an error: " + e.getMessage());
+			System.out.println("Screenshot not attached due to an error: " + e.getMessage());
+			return null;
 		}
-		return screenshot_name;
+		
 	}
+
 	public String date_and_Time(String formate) {
 		String value = "";
 		try {

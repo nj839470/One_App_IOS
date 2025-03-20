@@ -95,7 +95,7 @@ public class Base_Utility
 				ltOptions.put("platformName", "ios");
 				ltOptions.put("deviceName", "iPhone.*");
 				if (enveronment.equalsIgnoreCase("prod")) {
-				ltOptions.put("app", "lt://APP10160361821740414249380285");
+					ltOptions.put("app", "lt://APP10160361821740414249380285");
 				} else {
 					ltOptions.put("app", "lt://APP10160401231739365633247837");
 				}
@@ -245,9 +245,9 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			if (Base_Utility.lis != null) {
-				Base_Utility.lis.get_Screen_shot(fieldname);
 				test.log(Status.FAIL, fieldname + "= is not able to send = "
-						+ test.addScreenCaptureFromPath(Base_Utility.lis.getcapcture(fieldname)));
+						+ test.addScreenCaptureFromBase64String(Base_Utility.lis.get_Screen_shot(fieldname)));
+
 			} else {
 				test.log(Status.FAIL, fieldname + "= Unable to capture screenshot, 'lis' is null.");
 			}
@@ -269,9 +269,9 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			if (Base_Utility.lis != null) {
-				Base_Utility.lis.get_Screen_shot(Field_name);
+				
 				test.log(Status.FAIL, Field_name + " is not able to clear = "
-						+ test.addScreenCaptureFromPath(Base_Utility.lis.getcapcture(Field_name)));
+						+ test.addScreenCaptureFromBase64String(Base_Utility.lis.get_Screen_shot(Field_name)));
 			} else {
 				test.log(Status.FAIL, Field_name + "= Unable to capture screenshot, 'lis' is null.");
 			}
@@ -294,9 +294,8 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			if (Base_Utility.lis != null) {
-				Base_Utility.lis.get_Screen_shot(fieldname);
 				test.log(Status.FAIL, fieldname + "= Unable to Click = "
-						+ test.addScreenCaptureFromPath(Base_Utility.lis.getcapcture(fieldname)));
+						+ test.addScreenCaptureFromBase64String(Base_Utility.lis.get_Screen_shot(fieldname)));
 			} else {
 				test.log(Status.FAIL, fieldname + "= Unable to capture screenshot, 'lis' is null.");
 			}
@@ -317,9 +316,8 @@ public class Base_Utility
 
 		} catch (Exception e) {
 			if (Base_Utility.lis != null) {
-				Base_Utility.lis.get_Screen_shot(fieldname);
 				test.log(Status.FAIL, fieldname + "= Unable to Click = "
-						+ test.addScreenCaptureFromPath(Base_Utility.lis.getcapcture(fieldname)));
+						+ test.addScreenCaptureFromBase64String(Base_Utility.lis.get_Screen_shot(fieldname)));
 			} else {
 				test.log(Status.FAIL, fieldname + "= Unable to capture screenshot, 'lis' is null.");
 			}
@@ -535,9 +533,8 @@ public class Base_Utility
 			}
 		} catch (Exception e) {
 			if (Base_Utility.lis != null) {
-				Base_Utility.lis.get_Screen_shot(filedname);
 				test.log(Status.FAIL, filedname + "= is not readable = "
-						+ test.addScreenCaptureFromPath(Base_Utility.lis.getcapcture(filedname)));
+						+ test.addScreenCaptureFromBase64String(Base_Utility.lis.get_Screen_shot(filedname)));
 			} else {
 				test.log(Status.FAIL, filedname + "= Unable to capture screenshot, 'lis' is null.");
 			}

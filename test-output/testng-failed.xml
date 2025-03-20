@@ -8,12 +8,12 @@
     <classes>
       <class name="Page_Test.Home_Page_Test">
         <methods>
+          <include name="TC044_verify_Check_Out_at_home_page"/>
           <include name="TC042_Accessories_in_PAM"/>
           <include name="TC043_View_All_Accessories_in_PAM"/>
           <include name="TC041_Merchandise_in_PAM"/>
           <include name="TC040_Lubricant_in_PAM"/>
           <include name="tear_Down"/>
-          <include name="TC038_verify_Service_at_home_page"/>
           <include name="OPEN_AND_INSTALL_APP"/>
           <include name="TC039_Helmets_in_PAM"/>
           <include name="TC045_verify_Benifits_Vehicle_Exchange"/>

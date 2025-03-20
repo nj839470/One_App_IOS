@@ -1,8 +1,0 @@
-Cancel with yes option Unable to Click with error: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.12'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [adc3e9f6-0f7a-4367-ab88-13f9e4f131a2, findElement {using=xpath, value=//android.widget.TextView[@resource-id='com.customerapp.hero:id/btn_lbl' and @text='Yes']}]
-Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleId: com.customerapp.hero, appium:databaseEnabled: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:permissions: {"com.customerapp.hero": {"..., appium:platformVersion: 18.3, appium:showXcodeLog: true, appium:takesScreenshot: true, appium:udid: 00008120-0004798A21F9A01E, appium:webStorageEnabled: false, platformName: IOS}
-Session ID: adc3e9f6-0f7a-4367-ab88-13f9e4f131a2
